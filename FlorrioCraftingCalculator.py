@@ -22,7 +22,6 @@ SuccessChance = 1-FailChance
 MaxSuccesses = int(PetalsAvailable/5)
 PetalsLostPerAtt = 2.5*FailChance+5*SuccessChance
 AverageAttempts = int(PetalsAvailable/PetalsLostPerAtt)
-ChanceForOne = 1-FailChance**AverageAttempts
-AverageSuccesses = int(AverageAttempts)
-print(AverageAttempts)
-print(ChanceForOne)
+ChanceForOne = round(1-FailChance**AverageAttempts, 3)
+AverageSuccesses = round(AverageAttempts*SuccessChance, 3)
+print(f"The chance of having 1 success is {ChanceForOne} with the average number of successes being {AverageSuccesses}")
