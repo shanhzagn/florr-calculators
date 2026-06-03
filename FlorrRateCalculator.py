@@ -2,18 +2,53 @@ while True:
     FarmedRarity = input("Do you farm ultra mobs or mythic mobs? (ultra/mythic)").strip().lower()
     if FarmedRarity == "mythic":
         Urate = 0
-        Mrate = float(input("Insert rate of mythic drop of desired petal as a percentage from the farmed mob e.g. glass from mythic soldier ant would be 0.9:"))/100
-        Lrate = float(input("Insert rate of legendary drop of desired petal as a percentage from the farmed mob:"))/100
+        while True:
+            Mrate = input("Insert rate of mythic drop of desired petal as a percentage from the farmed mob e.g. glass from mythic soldier ant would be 0.9:")
+            try:
+                Mrate = float(Mrate)/100
+            except Exception:
+                print("invalid")
+                continue
+            break
+        while True:
+            Lrate = input("Insert rate of legendary drop of desired petal as a percentage from the farmed mob:")
+            try:
+                Lrate = float(Mrate)/100
+            except Exception:
+                print("invalid")
+                continue
+            break
     elif FarmedRarity == "ultra":
-        Urate = float(input("Insert rate of ultra drop of desired petal as a percentage from the farmed mob e.g. glass from ultra soldier ant would be 0.5:"))/100
-        Mrate = float(input("Insert rate of mythic drop of desired petal as a percentage from the farmed mob:"))/100
-        Lrate = float(input("Insert rate of legendary drop of desired petal as a percentage from the farmed mob:")) / 100
+        while True:
+            Urate = input("Insert rate of ultra drop of desired petal as a percentage from the farmed mob e.g. glass from ultra soldier ant would be 0.5:")
+            try:
+                Urate = float(Urate)/100
+            except Exception:
+                print("invalid")
+                continue
+            break
+        while True:
+            Mrate = input("Insert rate of mythic drop of desired petal as a percentage from the farmed mob:")
+            try:
+                Mrate = float(Mrate)/100
+            except Exception:
+                print("invalid")
+                continue
+            break
+        while True:
+            Lrate = input("Insert rate of legendary drop of desired petal as a percentage from the farmed mob:")
+            try:
+                Lrate = float(Lrate)/100
+            except Exception:
+                print("invalid")
+                continue
+            break
     elif FarmedRarity not in ["mythic", "ultra"]:
         print("invalid, try again!")
         continue
     break
 while True:
-    UltrasNeeded = int(input("How many ultras do you want?"))
+    UltrasNeeded = input("How many ultras do you want?")
     try:
         UltrasNeeded = int(UltrasNeeded)
     except Exception:
