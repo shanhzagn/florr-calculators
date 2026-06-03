@@ -1,6 +1,17 @@
-# this program gives you the chance of crafting at least 1 petal of the desired rarity and the average amount you craft
-DesiredRarity = input("insert the rarity you are trying to craft into e.g mythic ultra super")
-PetalsAvailable = int(input("insert the number of petals you have to attempt"))
+while True:
+    DesiredRarity = input("insert the rarity you are trying to craft into e.g mythic ultra super").strip().lower()
+    if DesiredRarity not in ["unusual", "rare", "epic", "legendary", "mythic", "ultra", "super", "eternal"]:
+        print("Not a valid rarity. Try again!")
+        continue
+    break
+while True:
+    PetalsAvailable = input("insert the number of petals you have to attempt").strip()
+    try:
+        PetalsAvailable = int(PetalsAvailable)
+    except Exception:
+        print("Not a valid number! Try again.")
+        continue
+    break
 if DesiredRarity == "unusual":
     FailChance = 0.36
 elif DesiredRarity == "rare":
