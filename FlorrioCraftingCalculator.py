@@ -1,7 +1,7 @@
 while True:
-    DesiredRarity = input("insert the rarity you are trying to craft into e.g mythic ultra super").strip().lower()
+    DesiredRarity = input("insert the rarity you are trying to craft into e.g mythic, ultra, super, etc.").strip().lower()
     if DesiredRarity not in ["unusual", "rare", "epic", "legendary", "mythic", "ultra", "super", "eternal"]:
-        print("Not a valid rarity. Try again!")
+        print("Not a valid rarity. Please try again.")
         continue
     break
 while True:
@@ -28,7 +28,6 @@ elif DesiredRarity == "super":
     FailChance = 0.99
 elif DesiredRarity == "eternal":
     FailChance = 0.999
-else: print("invalid input")
 SuccessChance = 1-FailChance
 MaxSuccesses = int(PetalsAvailable/5)
 PetalsLostPerAtt = 2.5*FailChance+5*SuccessChance

@@ -13,7 +13,7 @@ while True:
         while True:
             Lrate = input("Insert rate of legendary drop of desired petal as a percentage from the farmed mob:")
             try:
-                Lrate = float(Mrate)/100
+                Lrate = float(Lrate)/100
             except Exception:
                 print("invalid")
                 continue
@@ -47,15 +47,18 @@ while True:
         print("invalid, try again!")
         continue
     break
-while True:
-    UltrasNeeded = input("How many ultras do you want?")
-    try:
-        UltrasNeeded = int(UltrasNeeded)
-    except Exception:
-        print("Not a number")
-        continue
-    break
-Mrate = Mrate+Lrate/65
-Urate = Urate+Mrate/128
-RequiredKills = int(UltrasNeeded/Urate)
-print(f"On average, you need to kill {RequiredKills} {FarmedRarity}s to get {UltrasNeeded} ultra petals.")
+if (Urate+Mrate+Lrate) > 1:
+    print("The total rate for all drops cannot exceed 100%, please rerun and enter the correct values")
+else:
+    while True:
+        UltrasNeeded = input("How many ultras do you want?")
+        try:
+            UltrasNeeded = int(UltrasNeeded)
+        except Exception:
+            print("Not a number")
+            continue
+        break
+    Mrate = Mrate+Lrate/65
+    Urate = Urate+Mrate/128
+    RequiredKills = int(UltrasNeeded/Urate)
+    print(f"On average, you need to kill {RequiredKills} {FarmedRarity}s to get {UltrasNeeded} ultra petals.")
