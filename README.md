@@ -3,7 +3,8 @@
 My project are calculators made for calculating drop and craft rates in the game florr.io. No AI.
 This is my first project so it might be a bit janky.
 
-**Instructions**
+**Instructions:**
+
 My rate calculator tells you how many of a specific rarity of mobs you have to kill on average to craft a set amount of items of the ultra rarity.
 First, input the rarity of the mob you are farming, mythic or ultra. Then input the the droprates of legendary, mythic, and ultra items from the mob as a percentage. Finally, input the amount of ultra items you want to get for the output.
 
