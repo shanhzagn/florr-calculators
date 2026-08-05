@@ -4,8 +4,8 @@ My project are calculators made for calculating drop and craft rates in the game
 This is my first project so it might be a bit janky.
 
 # Usage:
+**Download from releases page here https://github.com/shanhzagn/florr-calculators/releases or:**
 Download the crafting calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrioCraftingCalculator.exe
-
 Download the rates calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrRateCalculator.exe
 
 **Instructions for Project:**
