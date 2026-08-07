@@ -9,7 +9,7 @@ This is my first project so it might be a bit janky.
 Download the crafting calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrioCraftingCalculator.exe
 Download the rates calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrRateCalculator.exe
 
-Open Powershell, navigate to downloads, and run with .\ConsoleGamesWindows.exe 
+Open Powershell, navigate to downloads, and run with `.\FlorrioCraftingCalculator.exe` and `.\FlorrRateCalculator.exe` for the other one
 
 **Instructions for Project:**
 
