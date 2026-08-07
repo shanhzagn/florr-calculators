@@ -9,6 +9,8 @@ This is my first project so it might be a bit janky.
 Download the crafting calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrioCraftingCalculator.exe
 Download the rates calculator from https://github.com/shanhzagn/florr-calculators/releases/download/v1/FlorrRateCalculator.exe
 
+Open Powershell, navigate to downloads, and run with .\ConsoleGamesWindows.exe 
+
 **Instructions for Project:**
 
 My rate calculator tells you how many of a specific rarity of mobs you have to kill on average to craft a set amount of items of the ultra rarity.
